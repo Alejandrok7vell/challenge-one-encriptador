@@ -1,20 +1,36 @@
 let mensaje = "mi gato es muy travieso";
 let mensajeEncriptado = encriptar(mensaje);
+let input = document.querySelector("input");
 
-write("Mensaje Original: " + mensaje, 3);
-
-write("Mensaje Encriptado: " + encriptar(mensaje), 2);
-write("Mensaje Desencriptado: " + desencriptar(mensajeEncriptado), 0);
-
-function write(texto, br) {
-  let sl = br || 0;
-
-  document.write(texto);
-
-  for (let i = 0; i < sl; i++) {
-    document.write("<br>");
-  }
+function write(texto, id) {
+  document.getElementById(id).innerHTML = texto;
 }
+
+function buttonEncriptar() {
+  write(encriptar(input.value), "text");
+}
+
+function buttonDesencriptar() {
+  write(desencriptar(input.value), "text");
+}
+
+function copiar() {
+  let aux = document.createElement("input");
+  aux.setAttribute("value", document.getElementById("text").innerHTML);
+  document.body.appendChild(aux);
+  aux.select();
+  document.execCommand("copy");
+  document.body.removeChild(aux);
+
+  alert("Texto copiado! :D");
+}
+
+let button1 = document.querySelector("#encriptar");
+let button2 = document.querySelector("#desencriptar");
+let buttonCopiar = document.querySelector("#copy-button");
+button1.onclick = buttonEncriptar;
+button2.onclick = buttonDesencriptar;
+buttonCopiar = copiar;
 
 function encriptar(m) {
   let text = m;

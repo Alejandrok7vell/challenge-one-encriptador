@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+   position: relative;
+   background: #F3F5FC;
+}
+
+#logo {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 0px;
+
+   position: absolute;
+   width: 120px;
+   height: 48px;
+   left: 40px;
+   top: 40px;
+}
+
+#entrada {
+   position: absolute;
+   width: 577;
+   height: 48px;
+   left: 240px;
+   top: 168px;
+
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 32px;
+   line-height: 150%;
+
+   color: #0A3871;
+}
+
+.botones {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   padding: 0px;
+
+   position: absolute;
+   width: 680px;
+   height: 67px;
+   left: 240px;
+   top: 885px;
+}
+
+#encriptar {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   padding: 24px;
+
+   position: static;
+   width: 328px;
+   height: 67px;
+   left: 0px;
+   top: 0px;
+
+   background: #0A3871;
+   border-radius: 24px;
+
+   flex: none;
+   order: 0;
+   flex-grow: 0;
+   margin: 0px 24px;
+}
+#encriptar p {
+   position: static;
+   width: 280px;
+   height: 19px;
+   left: 24px;
+   top: 24px;
+
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   text-align: center;
+   color: #FFF;
+
+   flex: none;
+   order: 0;
+   flex-grow: 1;
+   margin: 0px 8px;
+}
+
+#desencriptar {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   padding: 24px;
+
+   position: static;
+   width: 328px;
+   height: 67px;
+   left: 352px;
+   top: 0px;
+
+   background: #D8DFE8;
+   border: 1px solid #0A3871;
+   box-sizing: border-box;
+   border-radius: 24px;
+
+   flex: none;
+   order: 1;
+   flex-grow: 0;
+   margin: 0px 24px;
+}
+#desencriptar p {
+   position: static;
+   width: 280px;
+   height: 19px;
+   left: 24px;
+   top: 24px;
+
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   text-align: center;
+   color: #0A3871;
+
+   flex: none;
+   order: 0;
+   flex-grow: 1;
+   margin: 0px 8px;
+}

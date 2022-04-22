@@ -3,9 +3,22 @@
    <head>
       <meta charset="UTF-8">
       <title>Encriptador</title>
+      <link href="style.css" rel="stylesheet" type="text/css">
    </head>
    <body>
-      
+      <img src="Logo.png" id="logo">
+      <input id="entrada"/>
+      <button id="encriptar" class="botones">
+         <p>Encriptar</p>
+      </button>
+      <button id="desencriptar" class="botones">
+         <p>Desencriptar</p>
+      </button>
+      <br/>
+      <p id="text">Resultado...</p>
+      <button id="copy-button" onclick="copiar()">
+         <p>copiar</p>
+      </button>
    </body>
 
    <script src="script.js"></script>
